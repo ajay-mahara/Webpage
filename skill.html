@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skill-page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+ <body class="font-poppins bg-black relative">
+             <header class="lg:px-16 px-4 flex flex-wrap items-center py-4 shadow-lg bg-black/60">
+        
+                <div class="flex-1 flex justify-between items-center">
+                    <a href="/index.html" class="text-3xl font-semibold font-serif text-green-400">AJAY</a>
+                </div>
+        
+                <label for="menu-toggle" class="pointer-cursor md:hidden block">
+                    <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                    <title>menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                    </svg>
+                </label>
+                <input class="hidden" type="checkbox" id="menu-toggle" />
+        
+                <div class="hidden md:flex md:items-center md:w-auto w-full" id="menu">
+                    <nav>
+                        <ul class="md:flex items-center justify-between text-base text-white pt-4 md:pt-0">
+                            <li><a class="md:p-4 py-3 px-0 block text-green-500 hover:text-green-500" href="/">Home</a></li>
+                            <li><a class="md:p-4 py-3 px-0 block hover:text-green-500" href="/about.html">About Me</a></li>
+                            <li><a class="md:p-4 py-3 px-0 block hover:text-green-500" href="/project.html">Projects</a></li>
+                            <li><a class="md:p-4 py-3 px-0 block hover:text-green-500" href="/skill.html">Skills</a></li>
+                            <li><a class="md:p-4 py-3 px-0 block hover:text-green-500 md:mb-0 mb-2" href="/contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+<section class="min-h-screen w-full  md:px-8 xl:px-20 text-white bg-primary flex items-center">
+  <div class="flex container flex-col md:flex-row items-center md:items-start gap-16 w-full">
+    <!-- Left Side -->
+    <div class="w-full md:w-1/2 relative p-6 sm:px-28 md:p-0">
+      <div class="text-white p-6 pl-10 pr-20 sm:pl-10 lg:pr-20">
+        <!-- Vertical Text -->
+        <div
+          class="absolute -left-4 top-16 sm:left-16 top-20 sm:top-24 md:-left-12 xl:-left-16 md:top-16 xl:top-24 rotate-[-90deg] text-sm tracking-widest flex flex-row justify-start gap-2">
+          <div class="xl:w-16 md:w-10 sm:w-8 w-8 h-[2px] bg-white mt-2 mx-auto"></div>
+          <p>All Skills</p>
+        </div>
+
+        <!-- Main Heading -->
+        <h2 class="text-3xl md:text-4xl xl:text-6xl font-bold leading-tight">
+          Explore My Expertise & Tech Stack
+        </h2>
+      </div>
+
+      <p class="p-3 text-gray-400 text-sm leading-relaxed">
+        These are the tools and technologies that I use daily to develop web
+        applications. With a strong foundation in frontend, I focus on delivering clean,
+        maintainable code and intuitive user experiences.
+      </p>
+        <span class="py-4 px-2 space-x-2 rounded-lg bg-secondary shadow-lg">
+          <button class="rounded-lg px-4 py-2 bg-blue-500 text-white transition-all duration-300">
+    Skills
+          </button>
+          <button class="rounded-lg px-4 py-2 bg-transparent text-gray-300 transition-all duration-300">
+    Tools
+          </button>
+        </span>
+
+     </div>
+
+     <!-- Right Side (Static Icons Grid) -->
+      <div class="w-full md:w-1/2 flex justify-center items-center">
+      <div class="grid grid-cols-3 md:grid-cols-4 gap-4">
+        <!-- Static Icons -->
+        <div class="text-center">
+          <div class="p-4 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center">
+            <span class="text-4xl">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256"><!-- Icon from Skill Icons by tandpfun - https://github.com/tandpfun/skill-icons/blob/main/LICENSE --><g fill="none"><rect width="256" height="256" fill="#E14E1D" rx="60"/><path fill="#fff" d="m48 38l8.61 96.593h110.71l-3.715 41.43l-35.646 9.638l-35.579-9.624l-2.379-26.602H57.94l4.585 51.281l65.427 18.172l65.51-18.172l8.783-98.061H85.824l-2.923-32.71h122.238L208 38z"/><path fill="#EBEBEB" d="M128 38H48l8.61 96.593H128v-31.938H85.824l-2.923-32.71H128zm0 147.647l-.041.014l-35.579-9.624l-2.379-26.602H57.94l4.585 51.281l65.427 18.172l.049-.014z"/></g></svg>
+            </span>
+            <p class="text-xs mt-2">HTML5</p>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <div class="p-4 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center">
+            <span class="text-4xl">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256"><!-- Icon from Skill Icons by tandpfun - https://github.com/tandpfun/skill-icons/blob/main/LICENSE --><g fill="none"><rect width="256" height="256" fill="#0277BD" rx="60"/><path fill="#EBEBEB" d="m53.753 102.651l2.862 31.942h71.481v-31.942zM128.095 38H48l2.904 31.942h77.191zm0 180.841v-33.233l-.14.037l-35.574-9.605l-2.274-25.476H58.042l4.475 50.154l65.431 18.164z"/><path fill="#fff" d="m167.318 134.593l-3.708 41.426l-35.625 9.616v33.231l65.483-18.148l.48-5.397l7.506-84.092l.779-8.578L208 38h-80.015v31.942h45.009l-2.906 32.709h-42.103v31.942z"/></g></svg>
+            </span>
+            <p class="text-xs mt-2">CSS3</p>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <div class="p-4 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center">
+            <span class="text-4xl">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256"><!-- Icon from Skill Icons by tandpfun - https://github.com/tandpfun/skill-icons/blob/main/LICENSE --><g fill="none"><rect width="256" height="256" fill="#F0DB4F" rx="60"/><path fill="#323330" d="m67.312 213.932l19.59-11.856c3.78 6.701 7.218 12.371 15.465 12.371c7.905 0 12.889-3.092 12.889-15.12v-81.798h24.058v82.138c0 24.917-14.606 36.259-35.916 36.259c-19.245 0-30.416-9.967-36.087-21.996m85.07-2.576l19.588-11.341c5.157 8.421 11.859 14.607 23.715 14.607c9.969 0 16.325-4.984 16.325-11.858c0-8.248-6.53-11.17-17.528-15.98l-6.013-2.579c-17.357-7.388-28.871-16.668-28.871-36.258c0-18.044 13.748-31.792 35.229-31.792c15.294 0 26.292 5.328 34.196 19.247l-18.731 12.029c-4.125-7.389-8.591-10.31-15.465-10.31c-7.046 0-11.514 4.468-11.514 10.31c0 7.217 4.468 10.139 14.778 14.608l6.014 2.577c20.449 8.765 31.963 17.699 31.963 37.804c0 21.654-17.012 33.51-39.867 33.51c-22.339 0-36.774-10.654-43.819-24.574"/></g></svg>
+            </span>
+            <p class="text-xs mt-2">JavaScript</p>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <div class="p-4 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center">
+            <span class="text-4xl">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256"><!-- Icon from Skill Icons by tandpfun - https://github.com/tandpfun/skill-icons/blob/main/LICENSE --><g fill="none"><rect width="256" height="256" fill="#007ACC" rx="60"/><path fill="#fff" d="m56.611 128.849l-.081 10.484h33.32v94.679h23.569v-94.679h33.32v-10.281c0-5.689-.121-10.443-.284-10.565c-.122-.162-20.399-.244-44.983-.203l-44.739.122zm149.956-10.741c6.501 1.626 11.459 4.511 16.01 9.224c2.357 2.52 5.851 7.112 6.136 8.209c.081.325-11.053 7.802-17.798 11.987c-.244.163-1.22-.894-2.317-2.519c-3.291-4.795-6.745-6.868-12.028-7.233c-7.761-.529-12.759 3.535-12.718 10.321c0 1.991.284 3.169 1.097 4.795c1.706 3.535 4.876 5.648 14.832 9.955c18.326 7.884 26.168 13.085 31.045 20.48c5.445 8.249 6.664 21.415 2.966 31.208c-4.063 10.646-14.141 17.879-28.323 20.277c-4.388.772-14.791.65-19.504-.203c-10.281-1.829-20.033-6.908-26.047-13.572c-2.357-2.601-6.949-9.387-6.664-9.875c.121-.162 1.178-.812 2.356-1.503c1.138-.65 5.446-3.129 9.509-5.486l7.355-4.267l1.544 2.276c2.154 3.291 6.867 7.802 9.712 9.305c8.167 4.308 19.383 3.698 24.909-1.259c2.357-2.154 3.332-4.389 3.332-7.68c0-2.967-.366-4.267-1.91-6.502c-1.991-2.844-6.054-5.242-17.595-10.24c-13.206-5.689-18.895-9.224-24.096-14.832c-3.007-3.25-5.852-8.452-7.03-12.8c-.975-3.616-1.219-12.678-.447-16.335c2.722-12.759 12.353-21.658 26.25-24.3c4.511-.853 14.994-.528 19.424.569"/></g></svg>
+           </span>
+            <p class="text-xs mt-2">TypeScript</p>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <div class="p-4 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center">
+            <span class="text-4xl">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256"><!-- Icon from Skill Icons by tandpfun - https://github.com/tandpfun/skill-icons/blob/main/LICENSE --><g fill="none"><rect width="256" height="256" fill="#242938" rx="60"/><path fill="#00DC82" d="M138.787 189.333h68.772c2.184.001 4.33-.569 6.222-1.652a12.4 12.4 0 0 0 4.554-4.515a12.24 12.24 0 0 0-.006-12.332l-46.185-79.286a12.4 12.4 0 0 0-4.553-4.514a12.53 12.53 0 0 0-12.442 0a12.4 12.4 0 0 0-4.553 4.514l-11.809 20.287l-23.09-39.67a12.4 12.4 0 0 0-4.555-4.513a12.54 12.54 0 0 0-12.444 0a12.4 12.4 0 0 0-4.555 4.513L36.67 170.834a12.24 12.24 0 0 0-.005 12.332a12.4 12.4 0 0 0 4.554 4.515a12.5 12.5 0 0 0 6.222 1.652h43.17c17.104 0 29.718-7.446 38.397-21.973l21.072-36.169l11.287-19.356l33.873 58.142h-45.16zm-48.88-19.376l-30.127-.007l45.16-77.518l22.533 38.759l-15.087 25.906c-5.764 9.426-12.312 12.86-22.48 12.86"/></g></svg>            </span>
+            <p class="text-xs mt-2">Nuxt.js</p>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <div class="p-4 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center">
+            <span class="text-4xl">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256"><!-- Icon from Skill Icons by tandpfun - https://github.com/tandpfun/skill-icons/blob/main/LICENSE --><g fill="none"><rect width="256" height="256" fill="#242938" rx="60"/><path fill="#41B883" d="M182 50h36l-90 155.25L38 50h68.85L128 86l20.7-36z"/><path fill="#41B883" d="m38 50l90 155.25L218 50h-36l-54 93.15L73.55 50z"/><path fill="#fff" d="M73.55 50L128 143.6L182 50h-33.3L128 86l-21.15-36z"/></g></svg>            </span>
+            <p class="text-xs mt-2">Vue.js</p>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <div class="p-4 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" class="w-8 h-8 mx-auto" />
+            <p class="text-xs mt-2">Bootstrap</p>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <div class="p-4 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center">
+            <span class="text-4xl">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256"><!-- Icon from Skill Icons by tandpfun - https://github.com/tandpfun/skill-icons/blob/main/LICENSE --><g fill="none"><rect width="256" height="256" fill="#242938" rx="60"/><path fill="url(#skillIconsTailwindcssDark0)" fill-rule="evenodd" d="M83 110q9-36 45-36c36 0 40.5 27 58.5 31.5q18 4.502 31.5-13.5q-9 36-45 36c-36 0-40.5-27-58.5-31.5Q96.5 92 83 110m-45 54q9-36 45-36c36 0 40.5 27 58.5 31.5q18 4.502 31.5-13.5q-9 36-45 36c-36 0-40.5-27-58.5-31.5q-18-4.502-31.5 13.5" clip-rule="evenodd"/><defs><linearGradient id="skillIconsTailwindcssDark0" x1="86.5" x2="163.5" y1="74" y2="185.5" gradientUnits="userSpaceOnUse"><stop stop-color="#32B1C1"/><stop offset="1" stop-color="#14C6B7"/></linearGradient></defs></g></svg>            </span>
+            <p class="text-xs mt-2">TailwindCSS</p>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <div class="p-4 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" class="w-8 h-8 mx-auto" />
+            <p class="text-xs mt-2">PHP</p>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <div class="p-4 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="w-8 h-8 mx-auto" />
+            <p class="text-xs mt-2">Node.js</p>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <div class="p-4 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center">
+            <span class="text-4xl">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256"><!-- Icon from Skill Icons by tandpfun - https://github.com/tandpfun/skill-icons/blob/main/LICENSE --><g fill="none"><rect width="256" height="256" fill="#F03C2E" rx="60"/><g clip-path="url(#skillIconsGit0)"><path fill="#fff" d="m224.225 119.094l-87.319-87.319a12.87 12.87 0 0 0-14.035-2.793a12.9 12.9 0 0 0-4.177 2.793L100.569 49.9l23 23c5.35-1.875 11.475-.594 15.737 3.669a15.31 15.31 0 0 1 3.631 15.831l22.169 22.169c5.363-1.85 11.55-.657 15.831 3.637a15.32 15.32 0 0 1 3.321 16.706a15.333 15.333 0 0 1-20.029 8.293c-1.86-.771-3.55-1.9-4.973-3.324c-4.5-4.5-5.612-11.125-3.337-16.669l-20.675-20.675v54.407a15.6 15.6 0 0 1 4.062 2.9a15.326 15.326 0 0 1-21.675 21.675a15.32 15.32 0 0 1-3.326-16.704a15.3 15.3 0 0 1 3.326-4.971c1.481-1.475 3.125-2.594 5.019-3.344v-54.913a15.2 15.2 0 0 1-5.019-3.343a15.315 15.315 0 0 1-3.3-16.757L91.644 58.814l-59.875 59.812a12.88 12.88 0 0 0-2.795 14.04a12.9 12.9 0 0 0 2.795 4.179l87.325 87.312a12.9 12.9 0 0 0 4.177 2.793a12.9 12.9 0 0 0 9.858 0a12.9 12.9 0 0 0 4.177-2.793l86.919-86.781a12.88 12.88 0 0 0 3.776-9.109a12.88 12.88 0 0 0-3.776-9.11"/></g><defs><clipPath id="skillIconsGit0"><path fill="#fff" d="M28 28h200v200H28z"/></clipPath></defs></g></svg>            </span>
+            <p class="text-xs mt-2">Git</p>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <div class="p-4 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center">
+            <span class="text-4xl">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256"><!-- Icon from Skill Icons by tandpfun - https://github.com/tandpfun/skill-icons/blob/main/LICENSE --><g fill="none"><rect width="256" height="256" fill="#242938" rx="60"/><g clip-path="url(#skillIconsFigmaDark0)"><path fill="#0ACF83" d="M94.347 228c18.4 0 33.333-14.933 33.333-33.333v-33.334H94.347c-18.4 0-33.334 14.934-33.334 33.334S75.947 228 94.347 228"/><path fill="#A259FF" d="M61.013 128c0-18.4 14.934-33.333 33.334-33.333h33.333v66.666H94.347c-18.4 0-33.334-14.933-33.334-33.333"/><path fill="#F24E1E" d="M61.013 61.333C61.013 42.933 75.947 28 94.347 28h33.333v66.667H94.347c-18.4 0-33.334-14.934-33.334-33.334"/><path fill="#FF7262" d="M127.68 28h33.333c18.4 0 33.334 14.933 33.334 33.333s-14.934 33.334-33.334 33.334H127.68z"/><path fill="#1ABCFE" d="M194.347 128c0 18.4-14.934 33.333-33.334 33.333S127.68 146.4 127.68 128s14.933-33.333 33.333-33.333S194.347 109.6 194.347 128"/></g><defs><clipPath id="skillIconsFigmaDark0"><path fill="#fff" d="M61 28h133.36v200H61z"/></clipPath></defs></g></svg>            </span>
+            <p class="text-xs mt-2">Figma</p>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <div class="p-4 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center">
+            <span class="text-4xl">
+        
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="w-8 h-8 mx-auto" />
+            <p class="text-xs mt-2">React</p>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <div class="p-4 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="w-8 h-8 mx-auto" />
+            <p class="text-xs mt-2">GitHub</p>
+          </div>
+        </div>
+      </div>
+      </div>
+ </div>
+</section>
+<footer class="py-6 bg-black/80 text-center text-sm text-gray-300">
+  <p>© 2026 Ajay Mahara. All rights reserved.</p>
+</footer>
+</body>
+</html>

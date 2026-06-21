@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <title>about-Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+ </head>
+
+ <body class="font-poppins bg-black relative">
+             <header class="lg:px-16 px-4 flex flex-wrap items-center py-4 shadow-lg bg-black/60">
+        
+                <div class="flex-1 flex justify-between items-center">
+                    <a href="/index.html" class="text-3xl font-semibold font-serif text-green-400">AJAY</a>
+                </div>
+        
+                <label for="menu-toggle" class="pointer-cursor md:hidden block">
+                    <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                    <title>menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                    </svg>
+                </label>
+                <input class="hidden" type="checkbox" id="menu-toggle" />
+        
+                <div class="hidden md:flex md:items-center md:w-auto w-full" id="menu">
+                    <nav>
+                        <ul class="md:flex items-center justify-between text-base text-white pt-4 md:pt-0">
+                            <li><a class="md:p-4 py-3 px-0 block text-green-500 hover:text-green-500" href="/">Home</a></li>
+                            <li><a class="md:p-4 py-3 px-0 block hover:text-green-500" href="/about.html">About Me</a></li>
+                            <li><a class="md:p-4 py-3 px-0 block hover:text-green-500" href="/project.html">Projects</a></li>
+                            <li><a class="md:p-4 py-3 px-0 block hover:text-green-500" href="/skill.html">Skills</a></li>
+                            <li><a class="md:p-4 py-3 px-0 block hover:text-green-500 md:mb-0 mb-2" href="/contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        
+  <!-- <div id="container" class="p-20 w-auto flex px-24 justify-center relative">
+    
+      <div id="container" class="p-20 sm:p-16 md:p-20 lg:p-24 xl:p-20 w-auto flex flex-col md:flex-row px-4 sm:px-8 md:px-24 lg:px-24 xl:px-24 relative">
+          <div class="mr-10">
+             <img
+               class="rounded-lg min-w-[100px] w-full h-auto md:w-auto md:h-auto"
+               src="/p.PNG"
+               alt="image of myself"
+             />
+          </div>
+          <div class="w-full sm:w-[70%] md:w-[60%] lg:w-[50%]">
+      <h1 class="text-white font-bold text-3xl mt-6 mb-8">
+        Hey it's me, Aydin Vesali Moghaddam
+      </h1>
+
+      <p class="text-white w-full sm:w-[35rem] md:w-[30rem] lg:w-[25rem] mb-10">
+        I'm Aydin, a 18-year-old high schooler with a passion for web
+        development. My tech journey started with HTML, CSS, and JavaScript,
+        and I was hooked by the thrill of crafting dynamic, interactive
+        websites. As I grew, Node.js and ReactJS became my go-to tools for
+        building scalable applications. Feel free
+        to connect if you have questions, collaboration ideas, or just want to
+        discuss the latest in web development!
+      </p>
+
+    </div>
+  </div> -->
+
+  <section class="min-h-screen bg-primary text-white py-16 px-6 flex flex-col md:flex-row items-center justify-between gap-8">
+  <!-- Left Side: Image -->
+  <div class="w-full md:w-5/12 flex justify-center h-full md:justify-end">
+    <img src="/p.PNG" alt="About Me" class="w-72 h-96 md:w-80 lg:w-96 object-cover rounded-lg shadow-lg" />
+  </div>
+
+  <!-- Right Side: Text Content -->
+  <div class="w-full md:w-7/12 text-center md:text-left relative">
+    <!-- Vertical Text -->
+    <div class="absolute left-[40%] -top-6 md:-left-16  lg:top-0 md:top-6 rotate-0 md:rotate-[-90deg] text-sm tracking-widest">
+      <div class="flex items-center justify-center gap-2">
+        <div class="w-16 h-[2px] bg-white"></div>
+        <p>MORE ABOUT</p>
+      </div>
+    </div>
+
+    <!-- Main Heading -->
+    <h2 class="text-3xl md:text-5xl font-bold leading-tight mb-4 pl-10">
+      A Passionate <br> Software Developer
+    </h2>
+
+    <!-- Description -->
+    <p class="text-gray-300 mb-6 text-sm md:text-base leading-relaxed max-w-2xl mx-auto md:mx-0">
+      I’m Ajay Mahara, a passionate Web & App Developer with expertise in Vue.js, boostrap, & modern web technologies. I specialize in building user-friendly applications that solve real-world problems. With a deep understanding of frontend development, state management, and API integration, I can bring your ideas to life.
+    </p>
+
+    <!-- Buttons -->
+    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+      <a href="/project.html" class="bg-tertiary text-white font-semibold py-2 px-4 rounded-lg hover:bg-tertiary/80 text-center">
+        See Projects
+      </a>
+      <a href="/contact.html" class="border border-tertiary text-white font-semibold py-2 px-4 rounded-lg hover:bg-tertiary/10 text-center">
+        More Details
+      </a>
+    </div>
+  </div>
+</section>
+<footer class="py-6 bg-black/80 text-center text-sm text-gray-300">
+  <p>© 2026 Ajay Mahara. All rights reserved.</p>
+</footer>
+</body>
+
+</html>
