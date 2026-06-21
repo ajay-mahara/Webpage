@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
  <body class="font-poppins bg-black relative">
-             <header class="lg:px-16 px-4 flex flex-wrap items-center py-4 shadow-lg bg-black/60">
+             <header class="lg:px-16 px-4 flex flex-wrap items-center py-4 shadow-lg bg-black/60 z-50">
         
                 <div class="flex-1 flex justify-between items-center">
                     <a href="/index.html" class="text-3xl font-semibold font-serif text-green-400">AJAY</a>
@@ -189,6 +189,18 @@
 </section>
 <footer class="py-6 bg-black/80 text-center text-sm text-gray-300">
   <p>© 2026 Ajay Mahara. All rights reserved.</p>
-</footer>
+  </footer>
+  <script>
+    (function(){
+      var input = document.getElementById('menu-toggle');
+      var menu = document.getElementById('menu');
+      if(!input || !menu) return;
+      if(!input.checked){ menu.classList.add('hidden'); }
+      input.addEventListener('change', function(){
+        if(input.checked){ menu.classList.remove('hidden'); menu.classList.add('block'); }
+        else { menu.classList.add('hidden'); menu.classList.remove('block'); }
+      });
+    })();
+  </script>
 </body>
 </html>
