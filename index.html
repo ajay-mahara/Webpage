@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home-Page</title>
+    <link href="index.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
@@ -13,7 +14,7 @@
             <header class="lg:px-16 px-4 flex flex-wrap items-center py-4 shadow-lg bg-black/60 z-50">
         
                 <div class="flex-1 flex justify-between items-center">
-                    <a href="/index.html" class="text-3xl font-semibold font-serif text-green-400">AJAY</a>
+                    <a href="index.html" class="text-3xl font-semibold font-serif text-green-400">AJAY</a>
                 </div>
         
                 <label for="menu-toggle" class="cursor-pointer md:hidden block">
@@ -27,11 +28,11 @@
                 <div class="hidden md:flex md:items-center md:w-auto w-full peer-checked:block" id="menu">
                     <nav>
                         <ul class="md:flex items-center justify-between text-base text-white pt-4 md:pt-0">
-                            <li><a class="md:p-4 py-3 px-0 block text-green-500 hover:text-green-500" href="/">Home</a></li>
-                            <li><a class="md:p-4 py-3 px-0 block hover:text-green-500" href="/about.html">About Me</a></li>
-                            <li><a class="md:p-4 py-3 px-0 block hover:text-green-500" href="/project.html">Projects</a></li>
-                            <li><a class="md:p-4 py-3 px-0 block hover:text-green-500" href="/skill.html">Skills</a></li>
-                            <li><a class="md:p-4 py-3 px-0 block hover:text-green-500 md:mb-0 mb-2" href="/contact.html">Contact</a></li>
+                            <li><a class="md:p-4 py-3 px-0 block text-green-500 hover:text-green-500" href="index.html">Home</a></li>
+                            <li><a class="md:p-4 py-3 px-0 block hover:text-green-500" href="about.html">About Me</a></li>
+                            <li><a class="md:p-4 py-3 px-0 block hover:text-green-500" href="project.html">Projects</a></li>
+                            <li><a class="md:p-4 py-3 px-0 block hover:text-green-500" href="skill.html">Skills</a></li>
+                            <li><a class="md:p-4 py-3 px-0 block hover:text-green-500 md:mb-0 mb-2" href="contact.html">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -51,8 +52,8 @@
                             with Experience of 
                             few months of expertise in boostrap, NestJS, Nuxt.js, Next.js, Android, and some Flutter experience.</p>
                         <div class=" mt-6 flex sm:flex-row flex-col gap-4 sm:justify-start justify-center">
-                            <a href="/about.html" class="p-2 px-6 text-white font-semibold rounded-full outline outline-2 outline-green-500 hover:bg-green-600 transition ease-in-out delay-150 text-center">More Info</a>
-                            <a href="/contact.html" class="p-2 px-6 text-white font-semibold rounded-full outline outline-2 outline-yellow-500 hover:bg-yellow-600 transition ease-in-out delay-150 text-center">Contact Me</a>
+                            <a href="about.html" class="p-2 px-6 text-white font-semibold rounded-full outline outline-2 outline-green-500 hover:bg-green-600 transition ease-in-out delay-150 text-center">More Info</a>
+                            <a href="contact.html" class="p-2 px-6 text-white font-semibold rounded-full outline outline-2 outline-yellow-500 hover:bg-yellow-600 transition ease-in-out delay-150 text-center">Contact Me</a>
                         </div>
                     </div>
      
@@ -62,28 +63,9 @@
         </div>
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
-        <script>
-            var typed = new Typed('.typing', {
-            strings: ['', 'FullStack Developer,'],
-            typeSpeed: 100,
-            BackSpeed: 60,
-            loop: true
-        })
-        </script>
+        <script src="index.js"></script>
                 <footer class="py-6 bg-black/80 text-center text-sm text-gray-300">
                         <p>© 2026 Ajay Mahara. All rights reserved.</p>
                 </footer>
-    <script>
-        (function(){
-            var input = document.getElementById('menu-toggle');
-            var menu = document.getElementById('menu');
-            if(!input || !menu) return;
-            if(!input.checked){ menu.classList.add('hidden'); }
-            input.addEventListener('change', function(){
-                if(input.checked){ menu.classList.remove('hidden'); menu.classList.add('block'); }
-                else { menu.classList.add('hidden'); menu.classList.remove('block'); }
-            });
-        })();
-    </script>
 </body>
 </html>

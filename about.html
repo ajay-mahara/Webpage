@@ -4,7 +4,7 @@
     <title>about-Page</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./output.css" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,7 +18,7 @@
              <header class="lg:px-16 px-4 flex flex-wrap items-center py-4 shadow-lg bg-black/60 z-50">
         
                 <div class="flex-1 flex justify-between items-center">
-                    <a href="/index.html" class="text-3xl font-semibold font-serif text-green-400">AJAY</a>
+                    <a href="index.html" class="text-3xl font-semibold font-serif text-green-400">AJAY</a>
                 </div>
         
                 <label for="menu-toggle" class="cursor-pointer md:hidden block">
@@ -32,11 +32,11 @@
                 <div class="hidden md:flex md:items-center md:w-auto w-full peer-checked:block" id="menu">
                     <nav>
                         <ul class="md:flex items-center justify-between text-base text-white pt-4 md:pt-0">
-                            <li><a class="md:p-4 py-3 px-0 block text-green-500 hover:text-green-500" href="/">Home</a></li>
-                            <li><a class="md:p-4 py-3 px-0 block hover:text-green-500" href="/about.html">About Me</a></li>
-                            <li><a class="md:p-4 py-3 px-0 block hover:text-green-500" href="/project.html">Projects</a></li>
-                            <li><a class="md:p-4 py-3 px-0 block hover:text-green-500" href="/skill.html">Skills</a></li>
-                            <li><a class="md:p-4 py-3 px-0 block hover:text-green-500 md:mb-0 mb-2" href="/contact.html">Contact</a></li>
+                            <li><a class="md:p-4 py-3 px-0 block text-green-500 hover:text-green-500" href="index.html">Home</a></li>
+                            <li><a class="md:p-4 py-3 px-0 block hover:text-green-500" href="about.html">About Me</a></li>
+                            <li><a class="md:p-4 py-3 px-0 block hover:text-green-500" href="project.html">Projects</a></li>
+                            <li><a class="md:p-4 py-3 px-0 block hover:text-green-500" href="skill.html">Skills</a></li>
+                            <li><a class="md:p-4 py-3 px-0 block hover:text-green-500 md:mb-0 mb-2" href="contact.html">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -48,7 +48,7 @@
           <div class="mr-10">
              <img
                class="rounded-lg min-w-[100px] w-full h-auto md:w-auto md:h-auto"
-               src="/p.PNG"
+               src="logos/p.PNG"
                alt="image of myself"
              />
           </div>
@@ -73,7 +73,7 @@
   <section class="min-h-screen bg-primary text-white py-16 px-6 flex flex-col md:flex-row items-center justify-between gap-8">
   <!-- Left Side: Image -->
   <div class="w-full md:w-5/12 flex justify-center h-full md:justify-end">
-    <img src="/p.PNG" alt="About Me" class="w-72 h-96 md:w-80 lg:w-96 object-cover rounded-lg shadow-lg" />
+    <img src="logos/p.PNG" alt="About Me" class="w-72 h-96 md:w-80 lg:w-96 object-cover rounded-lg shadow-lg" />
   </div>
 
   <!-- Right Side: Text Content -->
@@ -98,10 +98,10 @@
 
     <!-- Buttons -->
     <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-      <a href="/project.html" class="bg-tertiary text-white font-semibold py-2 px-4 rounded-lg hover:bg-tertiary/80 text-center">
+      <a href="project.html" class="bg-tertiary text-white font-semibold py-2 px-4 rounded-lg hover:bg-tertiary/80 text-center">
         See Projects
       </a>
-      <a href="/contact.html" class="border border-tertiary text-white font-semibold py-2 px-4 rounded-lg hover:bg-tertiary/10 text-center">
+      <a href="contact.html" class="border border-tertiary text-white font-semibold py-2 px-4 rounded-lg hover:bg-tertiary/10 text-center">
         More Details
       </a>
     </div>
@@ -110,18 +110,4 @@
 <footer class="py-6 bg-black/80 text-center text-sm text-gray-300">
   <p>© 2026 Ajay Mahara. All rights reserved.</p>
   </footer>
-  <script>
-    (function(){
-      var input = document.getElementById('menu-toggle');
-      var menu = document.getElementById('menu');
-      if(!input || !menu) return;
-      if(!input.checked){ menu.classList.add('hidden'); }
-      input.addEventListener('change', function(){
-        if(input.checked){ menu.classList.remove('hidden'); menu.classList.add('block'); }
-        else { menu.classList.add('hidden'); menu.classList.remove('block'); }
-      });
-    })();
-  </script>
-</body>
-
-</html>
+  <script src="index.js"></script>
